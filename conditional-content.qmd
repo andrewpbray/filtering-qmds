@@ -1,0 +1,32 @@
+---
+title: "Blending languages"
+format: pdf
+lang: r
+---
+
+Using the conditional content idea:
+
+I love {{< meta lang >}}
+
+### R
+
+:::{.content-visible when-lang=r}
+This is how you add in R.
+:::
+
+:::{.content-visible when-lang=r}
+```{r}
+1 + 1
+```
+:::
+
+### Python
+:::{.content-visible when-lang=r}
+This is how you add in Python.
+:::
+
+:::{.content-visible when-lang=python}
+```{python}
+2 + 2
+```
+:::
